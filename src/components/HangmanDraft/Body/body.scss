@@ -1,0 +1,53 @@
+@mixin limb{
+    position: absolute;
+    height: 1rem;
+    width: 6rem;
+    background-color: black;
+}
+
+.head{
+    position: absolute;
+    top: 3.5rem;
+    right: -2.5rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 1rem solid black;
+}
+
+.torso{
+    position: absolute;
+    top: 9rem;
+    right: 0;
+    width: 1rem;
+    height: 8rem;
+    background-color: black;
+}
+
+.leftArm{
+    @include limb;
+    top: 11rem;
+    right: 0;
+    transform: rotate(30deg);
+}
+
+.rightArm{
+    @include limb;
+    top: 11rem;
+    right: -5rem;
+    transform: rotate(-30deg);
+}
+
+.leftLeg{
+    @include limb;
+    top: 19rem;
+    right: -1rem;
+    transform: rotate(-60deg);
+}
+
+.rightLeg{
+    @include limb;
+    top: 19rem;
+    right: -4rem;
+    transform: rotate(60deg);
+}

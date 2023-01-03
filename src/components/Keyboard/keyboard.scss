@@ -1,0 +1,32 @@
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: .5rem;
+
+    &__letter{
+        width: 100%;
+        border: .3rem solid black;
+        background: none;
+        aspect-ratio: 1/1;
+        font-size: 3rem;
+        text-transform: uppercase;
+        padding: .7rem;
+        font-weight: bold;
+        color: black;
+        cursor: pointer;
+
+        &-active{
+            background-color: skyblue;
+            color: white;
+        }
+
+        &-inactive{
+            opacity: .3;
+        }
+
+        &:hover:not(:disabled),
+        &:focus:not(:disabled){
+            background-color: skyblue;
+        }
+    }
+}

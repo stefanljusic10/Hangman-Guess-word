@@ -1,0 +1,21 @@
+.word{
+    display: flex;
+    gap: 1rem;
+    font-size: 16rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &__letter{
+        text-align: center;
+        border-bottom: 1rem solid black;
+        min-width: 5rem;
+
+        &-visible{
+            visibility: hidden;
+
+            &--red{
+                color: red;
+            }
+        }
+    }
+}

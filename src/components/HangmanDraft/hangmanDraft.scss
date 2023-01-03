@@ -1,0 +1,31 @@
+.hangmanDraft{
+    position: relative;
+
+    &__verticalPart{
+        height: 1rem;
+        width: 25rem;
+        background-color: black;
+        margin-left: 7rem;
+    }
+
+    &__horizontalPart{
+        position: absolute;
+        right: 0;
+        height: 3rem;
+        width: 1rem;
+        background-color: black;
+    }
+
+    &__horizontalStand{
+        height: 25rem;
+        width: 1rem;
+        background-color: black;
+        margin-left: 7rem;
+    }
+
+    &__verticalStand{
+        height: 1rem;
+        width: 15rem;
+        background-color: black;
+    }
+}
